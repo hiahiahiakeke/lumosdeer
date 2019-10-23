@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="index">
     <div class="bruce flex-ct-x">
       <div class="fault-text" data-text="LUmosdeer">LUmosdeer</div>
     </div>
@@ -9,9 +9,14 @@
 export default {}
 </script>
 <style lang="scss">
-.about {
+.index {
+  background: url('../assets/background.jpg') no-repeat center #302a2a;
+  height: 1000px;
+  overflow: hidden;
   .bruce {
     background-color: #000;
+    opacity:0.3;
+    margin-top: 300px;
   }
   .flex-ct-x {
     display: flex;
