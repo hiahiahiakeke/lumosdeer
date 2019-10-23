@@ -2,30 +2,52 @@
   <div id="app">
     <div id="nav">
       <span style="floatL:left;">-LUmosdeer</span>
-      <div style="float:right;" class="fenlei">
-        <span>map</span>
-        <span>time-line</span>
-        <span>关于本站</span>
+      <div class="fenlei">
+        <router-link to="/">
+          <span>home</span>
+        </router-link>
+        <router-link to="map">
+          <span>map</span>
+        </router-link>
+        <router-link to="timeline">
+          <span>time-line</span>
+        </router-link>
+        <router-link to="map">
+          <span>关于本站</span>
+        </router-link>
       </div>
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <style lang="less">
+@import url('./assets/styles/global.css');
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  background: url('./assets/background.jpg') no-repeat;
 }
 #nav {
+  position: fixed;
+  width: 100%;
+  background-color: #302a2a;
   height: 60px;
   line-height: 60px;
-  margin: 0 30px;
-  .fenlei span{
-    padding: 0 10px;
+  padding-left: 30px;
+  color: #fff;
+  .fenlei {
+    float: right;
+    margin-right: 60px;
+    span {
+      color: #fff;
+      padding: 0 10px;
+    }
+    a {
+      text-decoration: none;
+      color: #000;
+    }
   }
 }
 </style>
