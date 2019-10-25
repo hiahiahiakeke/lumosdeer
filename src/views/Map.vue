@@ -23,7 +23,7 @@ export default {
     },
     height: {
       type: String,
-      default: '500px'
+      default: '900px'
     }
   },
   data() {
@@ -65,7 +65,7 @@ export default {
           }
         ]),
         title: {
-          text: '',
+          text: 'Everywhere you go',
           subtext: '',
           left: 'center',
           top: 5,
@@ -92,16 +92,16 @@ export default {
           },
           left: '6%',
           top: 40,
-          bottom: '10%',
+          bottom: '20%',
           right: '14%',
           roam: true
         },
         series: [
           {
-            name: 'Prices and Earnings 2012',
+            name: 'ddd',
             type: 'scatter',
             coordinateSystem: 'geo',
-            symbolSize: 8,
+            symbolSize: 10,
             data: this.makeMapData(this.rawData),
             activeOpacity: 1,
             label: {
