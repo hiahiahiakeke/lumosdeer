@@ -1,7 +1,7 @@
 <template>
-    <div class="echarts">
-        <div :class="className" :id="id" :style="{height:height,width:width}" ref="myEchart"></div>
-    </div>
+  <div class="echarts">
+    <div :class="className" :id="id" :style="{height:height,width:width}" ref="myEchart"></div>
+  </div>
 </template>
 <script>
 import echarts from 'echarts'
@@ -23,17 +23,27 @@ export default {
     },
     height: {
       type: String,
-      default: '400px'
+      default: '500px'
     }
   },
   data() {
     return {
-      title: '图表',
-      placeholder: '用户名/电话',
-      find: '2',
-      chart: null,
-      rawData: [],
-      geoCoordMap: {}
+      rawData: [
+        [
+          'Shanghai'
+        ],
+        [
+          'New York'
+        ],
+        [
+          'Beijing'
+        ]
+      ],
+      geoCoordMap: {
+        'Shanghai': [121.473701, 31.230416],
+        'Beijing': [116.389160, 39.909736],
+        'New York': [-74.005941, 40.712784]
+      }
     }
   },
   mounted() {
@@ -55,8 +65,8 @@ export default {
           }
         ]),
         title: {
-          text: 'Prices and Earnings 2012',
-          subtext: 'data from macrofocus',
+          text: '',
+          subtext: '',
           left: 'center',
           top: 5,
           itemGap: 0,
@@ -130,5 +140,5 @@ export default {
   }
 }
 </script>
-<style lang="less">
+<style lang="scss">
 </style>

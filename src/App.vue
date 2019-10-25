@@ -30,7 +30,7 @@
   color: #2c3e50;
 }
 #nav {
-  position: fixed;
+  position: relative;
   width: 100%;
   background-color: #302a2a;
   height: 60px;
