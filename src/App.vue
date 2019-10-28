@@ -30,13 +30,14 @@
   color: #2c3e50;
 }
 #nav {
-  position: relative;
+  position: fixed;
   width: 100%;
-  background-color: #302a2a;
+  // background-color: transparent;
   height: 60px;
   line-height: 60px;
   padding-left: 30px;
   color: #fff;
+  z-index: 999;
   .fenlei {
     float: right;
     margin-right: 60px;

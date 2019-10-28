@@ -1,8 +1,11 @@
 <template>
-  <div class="index">
-    <div class="bruce flex-ct-x">
-      <div class="fault-text" data-text="LUmosdeer">LUmosdeer</div>
+  <div>
+    <div class="index">
+      <div class="bruce flex-ct-x">
+        <div class="fault-text" data-text="LUmosdeer">LUmosdeer</div>
+      </div>
     </div>
+    <div class="person">hhhh</div>
   </div>
 </template>
 <script>
@@ -10,12 +13,13 @@ export default {}
 </script>
 <style lang="scss">
 .index {
-  background: url('../assets/background.jpg') no-repeat center #302a2a;
-  height: 1000px;
+  background: url('../assets/background.jpg') no-repeat center -30px #302a2a;
+  background-attachment: fixed;
+  height: 722px;
   overflow: hidden;
   .bruce {
     background-color: #000;
-    opacity:0.3;
+    opacity: 0.3;
     margin-top: 300px;
   }
   .flex-ct-x {
@@ -49,12 +53,19 @@ export default {}
       }
     }
   }
-  @keyframes shake {
-    $steps: 20;
-    @for $i from 0 through $steps {
-      #{percentage($i * (1 / $steps))} {
-        clip: rect(random(100) + px, 9999px, random(100) + px, 0);
-      }
+}
+.person {
+  background: url('../assets/bgc-pic2.jpg') no-repeat top;
+  background-size: auto 722px;
+  height: 722px;
+  background-color: #323034;
+  background-attachment: fixed;
+}
+@keyframes shake {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage($i * (1 / $steps))} {
+      clip: rect(random(100) + px, 9999px, random(100) + px, 0);
     }
   }
 }
