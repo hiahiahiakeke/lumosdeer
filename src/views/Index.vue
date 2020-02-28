@@ -6,6 +6,7 @@
       </div>
     </div>
     <div class="person">hhhhhhh</div>
+    <div class="person">third</div>
   </div>
 </template>
 <script>
