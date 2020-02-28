@@ -5,7 +5,7 @@
         <div class="fault-text" data-text="LUmosdeer">LUmosdeer</div>
       </div>
     </div>
-    <div class="person">hhhh</div>
+    <div class="person">hhhhhhh</div>
   </div>
 </template>
 <script>
