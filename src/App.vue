@@ -11,10 +11,6 @@
         </router-link>
         <router-link to="timeline">
           <span>time-line</span>
-          <span>time-line</span>
-          <span>time-line</span>
-          <span>time-line</span>
-          <span>time-line</span>
         </router-link>
         <router-link to="map">
           <span>关于本站</span>
