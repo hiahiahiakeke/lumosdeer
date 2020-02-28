@@ -7,6 +7,7 @@
     </div>
     <div class="person">hhhhhhh</div>
     <div class="person">倒数第二次提交</div>
+    <div class="person">最后一次提交</div>
   </div>
 </template>
 <script>
