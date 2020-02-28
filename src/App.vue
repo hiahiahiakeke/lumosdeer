@@ -18,6 +18,10 @@
         </router-link>
         <router-link to="map">
           <span>关于本站</span>
+          <span>关于本站</span>
+          <span>关于本站</span>
+          <span>关于本站</span>
+          <span>关于本站</span>
         </router-link>
       </div>
     </div>
